@@ -1,6 +1,12 @@
 {
   "language": {
-    "uk": "uk",
-    "en": "en"
-  }
+    "uk": "Uk",
+    "en": "En"
+  },
+  "pages": {
+    "home": "Home",
+    "news": "News",
+    "profile": "Profile"
+  },
+  "tooltip-title": "Open settings"
 }

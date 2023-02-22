@@ -1,0 +1,16 @@
+.select-container{
+  width: 100px;
+  .MuiFormControl-root fieldset {
+    border: none;
+  }
+  .MuiSelect-select{
+    border: none;
+    padding: 10px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+

@@ -1,0 +1,9 @@
+@import "/src/style/variable";
+
+.header-container{
+  .btn{
+    .MuiButton-root:hover{
+      color: $second-color;
+    }
+  }
+}
