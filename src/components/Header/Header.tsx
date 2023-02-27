@@ -19,12 +19,10 @@ import { NavLink } from 'react-router-dom';
 
 import logo from 'assets/img/logo.png';
 import { LanguageSelector } from 'components/LanguageSelector';
-import { NAME_PAGES } from 'consts';
+import { NAME_PAGES, SETINGS } from 'consts';
 import { Path } from 'enums';
 
 import './header.scss';
-
-const settings = ['Вийти'];
 
 export const Header = () => {
   const { t } = useTranslation('header');
@@ -80,9 +78,11 @@ export const Header = () => {
             }}
           >
             {NAME_PAGES.map(page => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
+              <NavLink key={page} to={Path[page]} className="btn">
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              </NavLink>
             ))}
           </Menu>
         </Box>
@@ -102,7 +102,7 @@ export const Header = () => {
 
   return (
     <AppBar position="static" className="header-container">
-      <Container maxWidth="xl">
+      <Container>
         <Toolbar disableGutters>
           <Box
             sx={{
@@ -164,9 +164,9 @@ export const Header = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map(setting => (
+              {SETINGS.map(setting => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center">{t(`setting.${setting}`)}</Typography>
                 </MenuItem>
               ))}
             </Menu>

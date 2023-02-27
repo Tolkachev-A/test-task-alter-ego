@@ -1,0 +1,1 @@
+export { selectNews } from './select';

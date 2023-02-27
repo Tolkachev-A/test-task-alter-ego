@@ -8,5 +8,8 @@
     "news": "Новини",
     "profile": "Профіль"
   },
-  "tooltip-title": "Налаштування"
+  "tooltip-title": "Налаштування",
+  "setting": {
+    "sign-out": "Вийти"
+  }
 }

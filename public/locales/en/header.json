@@ -8,5 +8,8 @@
     "news": "News",
     "profile": "Profile"
   },
-  "tooltip-title": "Open settings"
+  "tooltip-title": "Open settings",
+  "setting": {
+    "sign-out": "Sign out"
+  }
 }
